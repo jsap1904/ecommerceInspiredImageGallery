@@ -8,19 +8,45 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="shortcut icon" href="img/favicon.png">
 		<link rel="stylesheet" href="css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Bevan" rel="stylesheet">
+		<title>Marvel vs DC</title>
+
 	</head>
 <!-- BODY  -->
 	<body>
 		<div class="container-fluid">
-		<h1 class="headingTitle">Marvel and DC Gallery</h1></div>
+		<h1 id="headingTitle" class="animated rubberBand">Marvel vs DC</h1></div>
 
 		<!-- javascript created products will go here -->
 		
 		<div id="products"></div>
-		<div id="productsTwo"></div>
 
 
 
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+    $("h2").hover(function(){
+        $(this).css("color", "black");
+        $(this).fadeOut(3000);
+        }, function(){
+        $(this).fadeIn("slow");
+        $(this).css("color", "red");
+    });
+    $("img").hover(function(){
+    	$(this).css( "border-radius", "50%" )
+    	}, function(){
+    	$(this).css("border-radius", "0%")
+        
+    });
+
+});
+</script>
+
+	 <script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
 	</body>
 <!-- 	BODY END -->

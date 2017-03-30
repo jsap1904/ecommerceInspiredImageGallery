@@ -1,11 +1,31 @@
-.row {
-	margin-bottom: 900px;
-}
+
 
 body {
 	text-align:center;
+	background-image: url(../img/bg.png);
+	background-size: initial;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+
+
 }
 
-.headingTitle {
+#headingTitle {
 	font-size:70px;
+}
+.thumbnail {
+	opacity: .85;
+}
+
+h1 {
+	font-family: 'Bevan', cursive;
+	color:red;
+	margin-bottom: 100px;
+	margin-top: 50px;
+}
+h2 {
+	font-weight: lighter;
+	font-family: 'Bevan', cursive
+
 }

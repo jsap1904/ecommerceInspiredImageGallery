@@ -33,7 +33,7 @@ for(var i = 0; i < newCharArray.length; i++) {
 	// create new elements for each product
 	var newItem  = document.createElement("div")
 	var newDiv   = document.createElement("div")
-	var nameH1   = document.createElement("h1")
+	var nameH2   = document.createElement("h2")
 	var universeH4   = document.createElement("h4")
 	var typeH4  = document.createElement("h4")
 	var appearancesH4  = document.createElement("h4")
@@ -45,7 +45,7 @@ for(var i = 0; i < newCharArray.length; i++) {
 	var characterUniverse = document.createTextNode("Comic Universe: " + newCharArray[i].universe)
 	var characterType = document.createTextNode("Type: " + newCharArray[i].type)
 	var characterAppearances = document.createTextNode("Appearances in Movies: " + newCharArray[i].appearances)
-	var likeButton = document.createTextNode("Add to team")
+	var likeButton = document.createTextNode("like")
 
 	// update source attribute
 	image.src = newCharArray[i].image
@@ -57,14 +57,14 @@ for(var i = 0; i < newCharArray.length; i++) {
 	newDiv.className = "Character Name" + [i] + " thumbnail"
 	
 	// add text to elements
-	nameH1.appendChild(characterName)
+	nameH2.appendChild(characterName)
 	universeH4.appendChild(characterUniverse)
 	typeH4.appendChild(characterType)
 	appearancesH4.appendChild(characterAppearances)
 	btn.appendChild(likeButton)
 
 	// add elements to new div
-	newDiv.appendChild(nameH1)
+	newDiv.appendChild(nameH2)
 	newDiv.appendChild(image)
 	newDiv.appendChild(universeH4)
 	newDiv.appendChild(typeH4)
@@ -76,6 +76,6 @@ for(var i = 0; i < newCharArray.length; i++) {
 
 	// add new item to the element with id="shirts"
 	document.getElementById("products").appendChild(newItem)
-	document.getElementById("productsTwo").appendChild(newItem)
+
 }
 
