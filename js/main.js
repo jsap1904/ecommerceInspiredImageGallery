@@ -19,13 +19,15 @@ var helix = new climbShoeArray("Helix", "La Sportiva", "Mens", "beginner", "img/
 var hiangle = new climbShoeArray("Hiangle", "Scarpa", "Mens", "advanced", "img/hiangle.jpg")
 var instinct = new climbShoeArray("Instinct", "Scarpa", "Mens", "advanced", "img/instinct.jpg")
 var katana = new climbShoeArray("Katana", "La Sportiva", "Womens", "intermediate", "img/katana.jpg")
+var moccasym = new climbShoeArray("Moccasym", "Five Ten", "Unisex", "intermediate", "img/moccasym.jpg")
+
 
 
 // create an array to add products to
 var newShoeArray = new Array
 
 // add products to array of products
-newShoeArray.push(lotus, masai, miura, nago,techno, addict, finale, helix, hiangle, instinct, katana)
+newShoeArray.push(lotus, masai, miura, nago,techno, addict, finale, helix, hiangle, instinct, katana, moccasym)
 
 
 // loop through products array
