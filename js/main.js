@@ -12,24 +12,24 @@ var lotus = new climbShoeArray("Lotus", "Mad Rock", "Womens", "advanced", "img/l
 var masai = new climbShoeArray("Masai", "Tenaya", "Unisex", "beginner", "img/masai.jpg")
 var miura = new climbShoeArray("Miura", "La Sportiva", "Mens", "adavanced", "img/miura.jpg")
 var nago = new climbShoeArray("Nago", "La Sportiva", "Mens", "beginner", "img/nago.jpg")
-var batman = new characterArray("Batman", "DC", "Hero", 7, "img/batman.jpg")
-var aquaman = new characterArray("Aquaman", "DC", "Hero", 1, "img/aquaman.jpg")
-var magneto = new characterArray("Magneto", "Marvel", "Villian", 5, "img/magneto.jpg")
-var joker = new characterArray("Joker", "DC", "Villian", 3, "img/joker.jpg")
-var wolverine = new characterArray("Wolverine", "Marvel", "Anti Hero", 7, "img/wolverine.jpg")
-var venom = new characterArray("Venom", "Marvel", "Villian", 1, "img/venom.jpg")
-var bane = new characterArray("Bane", "DC", "Villian", 1, "img/bane.jpg")
-var flash = new characterArray("Flash", "DC", "Hero", 2, "img/flash.jpg")
+var techno = new climbShoeArray("Techno", "Scarpa", "Womens", "intermediate", "img/techno.jpg")
+var addict = new climbShoeArray("Addict", "Evolv", "Unisex", "intermediate", "img/addict.jpg")
+var finale = new climbShoeArray("Finale", "La Sportiva", "Mens", "beginner", "img/finale.jpg")
+var helix = new climbShoeArray("Helix", "La Sportiva", "Mens", "beginner", "img/helix.jpg")
+var hiangle = new climbShoeArray("Hiangle", "Scarpa", "Mens", "advanced", "img/hiangle.jpg")
+var instinct = new climbShoeArray("Instinct", "Scarpa", "Mens", "advanced", "img/instinct.jpg")
+var katana = new climbShoeArray("Katana", "La Sportiva", "Womens", "intermediate", "img/katana.jpg")
+
 
 // create an array to add products to
-var newCharArray = new Array
+var newShoeArray = new Array
 
 // add products to array of products
-newCharArray.push(spiderman, deadpool, ironman, batman,wonderwoman, joker, aquaman, wolverine, magneto, flash, bane, venom)
+newShoeArray.push(lotus, masai, miura, nago,techno, addict, finale, helix, hiangle, instinct, katana)
 
 
 // loop through products array
-for(var i = 0; i < newCharArray.length; i++) {
+for(var i = 0; i < newShoeArray.length; i++) {
 	// create new elements for each product
 	var newItem  = document.createElement("div")
 	var newDiv   = document.createElement("div")
@@ -41,25 +41,25 @@ for(var i = 0; i < newCharArray.length; i++) {
 	var image    = document.createElement("img")
 
 	// create text for new elements
-	var characterName = document.createTextNode(newCharArray[i].name)
-	var characterUniverse = document.createTextNode("Comic Universe: " + newCharArray[i].universe)
-	var characterType = document.createTextNode("Type: " + newCharArray[i].type)
-	var characterAppearances = document.createTextNode("Appearances in Movies: " + newCharArray[i].appearances)
+	var shoeName = document.createTextNode(newShoeArray[i].name)
+	var shoeBrand = document.createTextNode("Brand: " + newCharArray[i].brand)
+	var shoeGender = document.createTextNode("Gender: " + newShoeArray[i].gender)
+	var shoeLevel = document.createTextNode("Level: " + newShoeArray[i].level)
 	var likeButton = document.createTextNode("like")
 
 	// update source attribute
-	image.src = newCharArray[i].image
+	image.src = newShoeArray[i].image
 
 	// update class attributes
 	image.className = "img-responsive"
 	btn.className = "btn btn-primary btn-lg"
 	newItem.className = "col-lg-3"
-	newDiv.className = "Character Name" + [i] + " thumbnail"
+	newDiv.className = "Shoe Name" + [i] + " thumbnail"
 	
 	// add text to elements
-	nameH2.appendChild(characterName)
-	universeH4.appendChild(characterUniverse)
-	typeH4.appendChild(characterType)
+	nameH2.appendChild(shoeName)
+	brandH4.appendChild(shoeBrand)
+	genderH4.appendChild(characterType)
 	appearancesH4.appendChild(characterAppearances)
 	btn.appendChild(likeButton)
 
