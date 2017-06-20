@@ -1,17 +1,17 @@
 // product constructor
-function characterArray(name, universe, type, appearances, image) {
-	this.name = name
-	this.universe = universe
-	this.type = type
-	this.appearances = appearances
+function climbShoeArray(shoe, brand, gender, level, image) {
+	this.shoe = shoe
+	this.brand = brand
+	this.gender = gender
+	this.level = level
 	this.image = image
 }
 
 // create new products from the product constructor
-var spiderman = new characterArray("Spiderman", "Marvel", "Hero", 7, "img/spiderman.jpg")
-var deadpool = new characterArray("Deadpool", "Marvel", "Anti Hero", 2, "img/deadpool.jpg")
-var ironman = new characterArray("Ironman", "Marvel", "Hero", 5, "img/ironman.jpg")
-var wonderwoman = new characterArray("Wonder Woman", "DC", "Hero", 2, "img/wonderwoman.jpg")
+var lotus = new climbShoeArray("Lotus", "Mad Rock", "Womens", "advanced", "img/lotus.jpg")
+var masai = new climbShoeArray("Masai", "Tenaya", "Unisex", "beginner", "img/masai.jpg")
+var miura = new climbShoeArray("Miura", "La Sportiva", "Mens", "adavanced", "img/miura.jpg")
+var nago = new climbShoeArray("Nago", "La Sportiva", "Mens", "beginner", "img/nago.jpg")
 var batman = new characterArray("Batman", "DC", "Hero", 7, "img/batman.jpg")
 var aquaman = new characterArray("Aquaman", "DC", "Hero", 1, "img/aquaman.jpg")
 var magneto = new characterArray("Magneto", "Marvel", "Villian", 5, "img/magneto.jpg")
