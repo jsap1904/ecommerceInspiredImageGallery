@@ -34,15 +34,15 @@ for(var i = 0; i < newShoeArray.length; i++) {
 	var newItem  = document.createElement("div")
 	var newDiv   = document.createElement("div")
 	var nameH2   = document.createElement("h2")
-	var universeH4   = document.createElement("h4")
-	var typeH4  = document.createElement("h4")
-	var appearancesH4  = document.createElement("h4")
+	var brandH4   = document.createElement("h4")
+	var genderH4  = document.createElement("h4")
+	var levelH4  = document.createElement("h4")
 	var btn      = document.createElement("button")
 	var image    = document.createElement("img")
 
 	// create text for new elements
-	var shoeName = document.createTextNode(newShoeArray[i].name)
-	var shoeBrand = document.createTextNode("Brand: " + newCharArray[i].brand)
+	var shoeName = document.createTextNode(newShoeArray[i].shoe)
+	var shoeBrand = document.createTextNode("Brand: " + newShoeArray[i].brand)
 	var shoeGender = document.createTextNode("Gender: " + newShoeArray[i].gender)
 	var shoeLevel = document.createTextNode("Level: " + newShoeArray[i].level)
 	var likeButton = document.createTextNode("like")
@@ -59,22 +59,22 @@ for(var i = 0; i < newShoeArray.length; i++) {
 	// add text to elements
 	nameH2.appendChild(shoeName)
 	brandH4.appendChild(shoeBrand)
-	genderH4.appendChild(characterType)
-	appearancesH4.appendChild(characterAppearances)
+	genderH4.appendChild(shoeGender)
+	levelH4.appendChild(shoeLevel)
 	btn.appendChild(likeButton)
 
 	// add elements to new div
 	newDiv.appendChild(nameH2)
 	newDiv.appendChild(image)
-	newDiv.appendChild(universeH4)
-	newDiv.appendChild(typeH4)
-	newDiv.appendChild(appearancesH4)
+	newDiv.appendChild(brandH4)
+	newDiv.appendChild(genderH4)
+	newDiv.appendChild(levelH4)
 	newDiv.appendChild(btn)
 
 	// add new div to new item div
 	newItem.appendChild(newDiv)
 
-	// add new item to the element with id="shirts"
+	// add new item to the element with id="products"
 	document.getElementById("products").appendChild(newItem)
 
 }
