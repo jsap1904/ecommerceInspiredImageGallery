@@ -7,21 +7,22 @@ body {
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-attachment: fixed; 
+	font-family: 'Roboto', sans-serif;
 
 
 }
 
 #headingTitle {
-	
+	background-image: url(../img/headbg.jpg);
 	font-size:70px;
-	
+	padding-top: 250px;
+	padding-bottom: 250px;
 }
 .thumbnail {
 	opacity: .65;
-	
-	
-
+	border-color: violet;
 }
+
 
 .products {
 	background-image: url(../img/bg.jpg);
@@ -33,12 +34,20 @@ body {
 
 h1 {
 	font-family: 'Bevan', cursive;
-	color:red;
+	color:white;
 	margin-bottom: 100px;
 	margin-top: 50px;
 }
 h2 {
-	font-weight: lighter;
 	font-family: 'Bevan', cursive
+	font-weight: lighter;
+	opacity: 1.0;
+	color: violet;
+
+
+}
+h4 {
+	opacity: 1.0;
+	font-family: 'Roboto', sans-serif;
 
 }
