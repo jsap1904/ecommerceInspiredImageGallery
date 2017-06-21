@@ -3,22 +3,32 @@
 body {
 	text-align:center;
 	background-image: url(../img/bg.jpg);
-	position: relative;
 	background-size: initial;
 	background-repeat: no-repeat;
-	background-position: center;
-	
+	background-position: top center;
+	background-attachment: fixed; 
 
 
 }
 
 #headingTitle {
+	
 	font-size:70px;
+	
 }
 .thumbnail {
 	opacity: .65;
 	
+	
 
+}
+
+.products {
+	background-image: url(../img/bg.jpg);
+	background-size: initial;
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: relative; 
 }
 
 h1 {
